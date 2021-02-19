@@ -5,9 +5,6 @@ endif
 let b:did_ftplugin = 1
 
 setlocal foldmethod=indent
-setlocal nocindent
-setlocal autoindent
-setlocal smartindent
 
 nnoremap <buffer> ]r :silent! call search('-\<\(Requ\\|Annotation\\|Duplicate\\|Irrelevant\\|Requ Ref\)\>-')<cr>
 nnoremap <buffer> [r :silent! call search('-\<\(Requ\\|Annotation\\|Duplicate\\|Irrelevant\\|Requ Ref\)\>-','b')<cr>
