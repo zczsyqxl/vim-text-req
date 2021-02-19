@@ -14,7 +14,7 @@ nnoremap <buffer> [r :silent! call search('-\<\(Requ\\|Annotation\\|Duplicate\\|
 nnoremap <buffer> ]t :silent! call search('=\<Title\>=')<cr>
 nnoremap <buffer> [t :silent! call search('=\<Title\>=','b')<cr>
 
-abbreviate <buffer> tt =Title= 0.0 TitleTemplete (ReqID_Temp_65535):<c-left><c-left><c-left><left>
+abbreviate <buffer> tt =Title=  (ReqID_Temp_65535):<c-left><c-left><c-left><left>
 abbreviate <buffer> ano -Annotation- (ReqID_Temp_65535):
 abbreviate <buffer> req -Requ- (ReqID_Temp_65535):
 abbreviate <buffer> dup -Duplicate- (ReqID_Temp_65535):
