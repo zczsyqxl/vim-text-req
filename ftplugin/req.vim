@@ -5,11 +5,8 @@ endif
 let b:did_ftplugin = 1
 
 setlocal foldmethod=indent
+setlocal expandtab
 
-nnoremap <buffer> ]r :silent! call search('-\<\(Requ\\|Annotation\\|Duplicate\\|Irrelevant\\|Requ Ref\)\>-')<cr>
-nnoremap <buffer> [r :silent! call search('-\<\(Requ\\|Annotation\\|Duplicate\\|Irrelevant\\|Requ Ref\)\>-','b')<cr>
-nnoremap <buffer> ]t :silent! call search('=\<Title\>=')<cr>
-nnoremap <buffer> [t :silent! call search('=\<Title\>=','b')<cr>
 
 abbreviate <buffer> tt =Title= (ReqID_Temp_65535):<c-left><c-left><c-left><left>
 abbreviate <buffer> ano -Annotation- (ReqID_Temp_65535):
