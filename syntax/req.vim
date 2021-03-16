@@ -11,6 +11,7 @@ set cpo&vim
 
 syntax region reqHeadText  matchgroup=reqHead oneline start=/=\<Title\>=/ end=/(/me=s-1 
 syntax region reqId matchgroup=reqIdBrace oneline start=/(/ end=/):\e*$/ 
+syntax region reqString matchgroup=reqString start=+\(^\|\W\+\)"+ skip=+\\"+ end=+"+ 
 
 syntax match reqItem /-\(Annotation\|Requ\|Irr\|Irrelevant\|Duplicate\|Requ Ref\)-/
 syntax match reqSignal /\<\(RET\|SN\)_\(IN\|OUT\)_\w\+/
@@ -23,6 +24,7 @@ hi def link reqId Comment
 hi def link reqIdBrace Statement
 hi def link reqSignal Identifier
 hi def link reqMacro Type
+hi def link reqString String
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
