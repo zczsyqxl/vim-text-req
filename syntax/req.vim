@@ -8,7 +8,7 @@ set cpo&vim
 
 " syntax keyword reqHead REQ_Title  
 " syntax keyword reqItem #Ano REQ_Req REQ_Irr REQ_Dup REQ_Rqr 
-syntax keyword reqValue TRUE FALASE
+syntax keyword reqValue TRUE FALSE
 
 syntax region reqHeadText  matchgroup=reqHead oneline start=/=\<Title\>=/ end=/(/me=s-1 
 syntax region reqId matchgroup=reqIdBrace oneline start=/(/ end=/):\e*$/ 
