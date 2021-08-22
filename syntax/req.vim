@@ -15,7 +15,7 @@ syntax region reqId matchgroup=reqIdBrace oneline start=/(/ end=/):\e*$/
 syntax region reqString matchgroup=reqString start=+\(^\|\W\+\)"+ skip=+\\"+ end=+"+ 
 
 syntax match reqItem /-\(Annotation\|Requ\|Irr\|Irrelevant\|Duplicate\|Requ Ref\)-/
-syntax match reqSignal /\<\(RET\|SN\)_\(IN\|OUT\)_\w\+/
+syntax match reqSignal /\<\(RET\|SN\)_\(IN_\|OUT_\|\)\w\+/
 syntax match reqMacro /\<\u\+_\u\+[0-9A-Z_]*\>/
 
 hi def link reqHead Statement
